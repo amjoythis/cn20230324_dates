@@ -1,0 +1,29 @@
+<!-- ./templates/date_input.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date Input</title>
+</head>
+<body>
+    <form
+        action="http://127.0.0.1:5555/"
+        method="POST"
+        enctype="application/x-www-form-urlencoded"
+    >
+        <label for="id_d">Your date:</label>
+        <input
+            id="id_d"
+            name="d"
+            type="date"
+            pattern="\d{2,4}-\d{1,2}-\d{1,2}"
+            value="1969-06-21"
+        ><br>
+        <input
+            type="submit"
+            value="compute distance to today">
+    </form>
+    <hr>
+    <!-- results -->
+</body>
+</html>
