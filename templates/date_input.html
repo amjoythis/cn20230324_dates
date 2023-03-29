@@ -24,6 +24,12 @@
             value="compute distance to today">
     </form>
     <hr>
-    <!-- results -->
+    <!-- results in a conditional Jinja2 template -->
+    {% if response_available is defined %}
+    <ul>
+        <li>Distance in days: {{d_days}}</li>
+        <li>Distance in days: {{d_hours}}</li>
+    </ul>
+    {% endif %}
 </body>
 </html>
