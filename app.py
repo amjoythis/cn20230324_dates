@@ -65,8 +65,9 @@ def respond_to_distance_request():
         )
 # def respond_to_distance_request
 
-app.run(
-    host="0.0.0.0", # all network interfaces
-    port=5555,
-    debug=True
-)
+if __name__=='__main__':
+    app.run(
+        host="0.0.0.0", # all network interfaces
+        port=5000,
+        debug=True
+    )
